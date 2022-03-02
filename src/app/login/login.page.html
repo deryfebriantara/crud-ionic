@@ -5,8 +5,19 @@
 </ion-header>
 
 <ion-content>
-  <ion-button [routerLink]="'/home'">
-    inbox
+
+  <ion-card>
+    <ion-item>
+      <ion-label>username</ion-label>
+      <ion-input [(ngModel)]="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>password</ion-label>
+      <ion-input [(ngModel)]="password"></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-button (click)="login()">
+    Submit
   </ion-button>
 
 </ion-content>
